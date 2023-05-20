@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins&family=Ubuntu:ital@1&display=swap');
+body{
+	background-color: #e5d5c6;
+}
+h1{
+	background-color: #e7b7a0;
+	color: white;
+	border-radius: 10px;
+	padding: 5px;
+	border-style:solid;
+	border-color: #d0947a;
+	font-family: 'Bungee', cursive;
+	font-size: 45px;
+	letter-spacing: 4px
+}
+.container-fluid{
+	background-color: #efe6dd;
+	color: ;
+	border-radius: 15px;
+	border-style:dashed;
+	border-color: #e7b7a0;
+}
+h4{
+	font-family: 'Ubuntu', sans-serif;
+}
+.containerinp{
+	float: center;
+	background-color: #e6b370;
+	color: #b97836;
+	padding: 10px;
+	border-radius: 10px;
+	border-style: solid;
+	border-color:#b97836;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 365px;
+	margin: 7px
+}
+button{
+	font-family: 'Poppins', sans-serif;
+	background-color: #b97836;
+	color: white;
+	letter-spacing: 1px;
+}

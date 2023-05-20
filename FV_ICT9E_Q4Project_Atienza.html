@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="design.css">
+</head>
+<body>
+	<br>
+	<div class="container" align="center">
+		<h1>Unit Conversion</h1>
+	</div>
+	<br>
+	<div class="container-fluid">
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<h4>Select Measurement</h4>
+				<select class="form-control">
+					<option>Select</option>
+					<option>Length</option>
+				</select>
+			</div>
+			<div class="col-md-6">
+				<h4>Enter Desired Value</h4>
+				<input type="number" id="MM" placeholder="Millimeter" class="form-control">
+			</div>
+		</div>
+	<br>	
+	</div>
+	<br>
+	<div class="container">
+		<br>
+		<div class="row" align="center">
+			<div class="containerinp">
+				<input type="number" class="form-control" placeholder="cm" id="cmoutput" disabled style="background-color: white">
+				<br>
+				<center>
+				<button class="btn btn-sm" onclick="MMtoCm()">to centimeters</button>
+				</center>
+			</div>
+			<br>
+			<div class="containerinp">
+				<input type="number" placeholder="m" class="form-control" id="moutput" disabled style="background-color: white">
+				<br>
+				<center>
+				<button class="btn btn-sm" onclick="MMtoM()">to meters</button>
+				</center>
+			</div>
+			<div class="containerinp">
+				<input type="number"placeholder="km" class="form-control" id="kmoutput" disabled style="background-color: white">
+				<br>
+				<center>
+				<button class="btn btn-sm" onclick="MMtoKm()">to kilometers</button>
+				</center>
+			</div>
+
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+function MMtoCm(){
+	let x = parseInt(document.getElementById('MM').value);
+	let y = 10;
+	document.getElementById('cmoutput').value= (x / y)
+}
+function MMtoM(){
+	let x = parseInt(document.getElementById('MM').value);
+	let y = 1000;
+	document.getElementById('moutput').value= (x / y)
+}
+function MMtoKm(){
+	let x = parseInt(document.getElementById('MM').value);
+	let y = 1000000;
+	document.getElementById('kmoutput').value= (x / y)
+}
+</script>
+</html>
